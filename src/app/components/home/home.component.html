@@ -1,0 +1,49 @@
+
+<!--
+<div class="text-center mt-5 h1 text-white bg-danger p-3"
+ *appAuthenticated="isConnected">
+    {{ training | uppercase }}
+</div>
+
+<div class="text-center">
+    <button class="btn btn-primary" 
+            (click)="onLogin()">
+        {{ isConnected ? 'Logout' : 'Login' }}
+    </button>
+</div>
+
+<div class="text-primary h3" *ngIf="isConnected">
+    {{ 'Bienvenue ! Vous êtes connectés.' | lowercase }}
+</div>
+
+<div>
+    <h2 class="text-warning">Liste des formations</h2>
+    <ol>
+       <li *ngFor="let tr of trainings; index as i">
+        {{ tr  + ' n°' + (i + 1) }}
+        </li>
+    </ol>
+</div>
+-->
+
+<main class="mt-5 pt-5">
+    <div class="container">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row text-center">
+          <div class="col-lg-4" *ngFor="let tr of trainings">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    
+            <h2 class="fw-normal">{{ tr }}</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            <p>
+                <a class="btn btn-primary"
+                routerLink="{{'/trainings/' + tr}}">
+                    Voir en détail &raquo;
+                </a>
+            </p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    
+      </div><!-- /.container -->
+</main>

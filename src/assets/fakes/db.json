@@ -1,0 +1,23 @@
+{
+  "user": {
+    "lastName": "SAWADOGO",
+    "firstName": "Malick"
+  },
+  "trainings": [
+    {
+      "id": 1,
+      "name": "Angular Training",
+      "description": "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop",
+      "date": "26/10/2022",
+      "tarif": 25000
+    },
+    {
+      "id": 2,
+      "name": "SpringBoot Training",
+      "description": "Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop",
+      "date": "12/09/2022",
+      "tarif": 25000
+    }
+  ]
+}
+
